@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/32bea50327.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Where in the world?</title>
+</head>
+<body class="bg-light-2 tran-bg">
+
+    <nav class="bg-light-1 tran-bg">
+        <h1 class="txt-light tran-txt">Where in the world?</h1>
+
+        <div class="theme-toggler-container">
+            <i class="fas fa-moon moon-dark"></i>
+            <i class="far fa-moon moon-light"></i>
+            <span class="txt-light tran-txt">Dark Mode</span>
+        </div>
+    </nav>
+
+    <div class="container bg-light-2 tran-bg">
+        <div class="input-container">
+            <div class="text-input">
+                <input type="text" class="country-name-input bg-light-1 txt-light tran-bg">
+                <div class="search-icon bg-light-1 tran-bg">
+                    <i class="fas fa-search txt-light tran-txt"></i>
+                </div>
+                <div class="placeholder-text">
+                    <span class="txt-light tran-txt">Search for a country...</span>
+                </div>
+            </div>
+            <div class="select-input">
+                <select class="bg-light-1 txt-light tran-all">
+                    <option value="" selected disabled hidden>Filter by Region</option>
+                    <option value="All">All</option>
+                    <option value="Africa">Africa</option>
+                    <option value="America">America</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+                <div class="down-icon bg-light-1 tran-bg">
+                    <i class="fas fa-chevron-down txt-light tran-txt"></i>
+                </div>
+            </div>
+        </div>
+        <div class="country-info-container">
+            <!-- <div class="country-info-card bg-light-1 tran-bg">
+                <div class="country-image-container">
+                    <img src="https://flagcdn.com/w320/in.png" alt="flag-icon">
+                </div>
+                <div class="country-text-info txt-light tran-txt">
+                    <h3>India</h3>
+                    <ul>
+                        <li><span>Population:</span> 1380004385</li>
+                        <li><span>Region:</span> Asia</li>
+                        <li><span>Capital:</span> New Delhi</li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+        <div class="error txt-light tran-txt">
+            <h2>Sorry, no results were found!</h2>
+            <p><strong>Search Suggestions: </strong></p>
+            <ul>
+                <li>Check Your Spelling</li>
+                <li>Enter correct Country name</li>
+                <li>Don't include any numbers</li>
+            </ul>
+        </div>
+        
+        <div class="country-info-expand bg-light-2 txt-light tran-all">
+            <button class="bg-light-1 txt-light tran-all back-btn">
+                <i class="fas fa-long-arrow-alt-left"></i>
+                <span>Back</span>
+            </button>
+            <div class="content">
+
+            </div>
+            <div class="button-group">
+
+            </div>
+        </div>
+        <div class="loader">
+            <div class="spinner">
+                <div class="ball bg-dark-1 tran-bg"></div>
+                <p class="loader-text txt-light tran-txt">LOADING</p>
+            </div>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
